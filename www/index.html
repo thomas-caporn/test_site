@@ -10,6 +10,7 @@
         }
         p {
             margin:20px;
+            font-size:larger;
         }
         a {
             color:white;
@@ -17,8 +18,19 @@
         footer{
             text-align: center;
             bottom: 0;
-            position: fixed;
             width: 100%;
+        }
+        h2 {
+            font-size:xx-large;
+            text-align:center;
+            color:mediumseagreen;
+        }
+        h3 {
+            text-align: left;
+            color:steelblue;
+        }
+        ul {
+            font-size: large;
         }
 
         </style>
@@ -26,29 +38,80 @@
 
 <body style="background-color:#303030;color:#BBCCFF">
 
-<h1>test_site</h1>
+<h1>toms_test_site</h1>
 
-<p style="text-align:center;font-size:40px">This is my test site for learning various web technologies</p>
+<p style="text-align:center;font-size:x-large;">This is my test site for learning various web technologies</p>
+<p style="text-align: center;font-size: large;">This site is available on <a href="https://github.com/thomas-caporn/test_site" style="color:white">Github</a></p>
 <p>
-What I am planing and currently doing is the following;
+What I am currently learning:
  
 <ul>
-<li>Refresh myself on html</li>
-<li>Learn myself some css</li>
-<li>Start on some backend technologies. (javascript, python, php????)</li>
-</ul></p>
-
-<p>This site will also be available on <a href="https://github.com/thomas-caporn/test_site" style="color:white">Github</a></p>
-
+    <li>HTML: To a more advanced level than just formatted text</li>
+    <li>CSS: To a more advanced level than just making text big and green</li>
+    <li>TAFE: I'm currently enrolled and doing a Certificate IV in Cyber Security so for this has me doing the following</li>
+    <ul>
+        <li>Python Scripting to the point where I am able to build a simple port scanner using the scapy module</li>
+        <li>Learning Company Profiling using DNS records, filtered google searches and social media posts.</li>
+        <li>Researching both Response standards ISO 27035 and NIST 800-61</li>
+        <li>Reseaching current trends in Cyber Threats to organisations</li>
+        <li>Building Networks including; VLANS, DHCP servers, ACL's, dynamic routing and static routing</li>
+        <li>Virtualisation</li>
+        <li>Metasploit: Getting system on Metasploitable 3 and root on Metasploitable 2</li>
+        <li>DNS poisoning</li>
+    </ul>
+</ul>
+</p>
+<p><br></p>
+<h2>My Home Lab</h2>
+<p>
+<h3>HP Proliant LD380 G5 (Quad core Xeon @ 2.66Ghz, 4GB RAM, 2 x 76GB 10k rpm SAS drive running in Raid0)</h3>
+<ul>
+    <li>OS running on Metal: Microsoft Hyper-V Server 2016</li>
+    <li>OS hosted: Microsoft server 2016</li>
+    <ul>
+    <li>Services running: NA for now</li>
+</ul>
+</ul>
+</p>
+<p style=font-size:large;>
+N.B. I am looking to upgrade this server soon buy boosting the RAM in it as it is a very limiting factor in providing services at this point.
+Also rearranging a few thing in my house to hopefully have a dedicated area for the homlab.
+</p>
+<p>
+    <h3>Raspberry Pi 2B (Quad core ARM @ 900Mhz, 1GB RAM)</h3>
+<ul>
+    <li>OS running on Metal: Raspberry Pi OS lite</li>
+    <li>Services Running:
+        <ul>
+        <li>Pi Hole (dns sinkhole with blacklists for advertisments, malicious servers and tracking servers)</li>
+        <li>A cron job to query public IP and update it with duckdns if the IP has changed</li>
+        <li>NGINX: running this site</li>
+        <li>SSH server for remote administration</li>
+        <li>Samba server for remote file access</li>
+    </ul></li>
+</ul>
+</p>
+<p>
+    <h3>Ryzen 1700 desktop</h3>
+<ul>
+    <li>OS Running on Metal: Kubuntu 20.04 LTS</li>
+    <li>Services Running:</li>
+    <ul>
+        <li>Mincraft Java edition 1.17.1 server</li>
+    </ul>
+</ul>
+</p>
+<p>
+N.B. This computer is also used by my kids for homework and playing games (minecraft mainly...)
+</p>
+<br>
+<br>
 
 <footer>
-    <p>
-        I will be serving this site on my Raspberry Pi 2B using nginx <br>
-    </p>
-    <a href="https://www.raspberrypi.com/"><img src="/images/logos/transparent-raspberry-pi.png" alt="Transparent Raspberry Pi" style="width:150px;height:50px;"></a>
+    <a href="https://www.raspberrypi.com/"><img src="/images/logos/transparent-raspberry-pi.png" alt="Transparent Raspberry Pi" style="width:190px;height:50px;"></a>
     <a href="https://www.nginx.com/"><img src="/images/logos/NGINX-logo-rgb-large.png" alt="NGINX logo Large" style="width:150px;height:50px;"></a>
     <br>
-    <p style="margin:0px;font-size:75%;text-align: left;">    
+    <p style="margin:0px;font-size:small;text-align: left;">    
         <a target="_blank" href="https://icons8.com/icon/oP5xX0sVsDIx/dog">Dog</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </p>
 </footer>
